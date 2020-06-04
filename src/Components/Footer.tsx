@@ -35,7 +35,7 @@ export default function Footer() {
     <footer className={classes.footer}>
       <Typography variant="h4" align="center" gutterBottom style = {{fontFamily: "Quicksand, sans-serif"}}>
         Oh!
-        <img style = {{width: "30px", height: "25px", margin: "0 10px"}} src = {Logo}></img>
+        <img style = {{width: "30px", height: "25px", margin: "0 10px"}} alt = "logo" src = {Logo}></img>
       </Typography>
       <Typography variant="subtitle1" align="center" color="textSecondary" component="p" style = {{fontFamily: "Quicksand, sans-serif", color: "white", fontSize: "20px"}}>
         Making you feel beautiful, comfortable and powerful.

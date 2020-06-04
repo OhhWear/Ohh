@@ -16,7 +16,7 @@ const cards = [
         key: 0,
         image: "https://images.unsplash.com/photo-1568441556126-f36ae0900180?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1048&q=80",
         heading: "Your Cloths Will Kill You Slowly But Surely",
-        description: "~~~"
+        description: "We have the illusion that clothes made from synthetic fibers are safe, but the materials are in fact full of invisible chemicals the clothing industry prefers we don't think about."
     },
     {
         key: 1,
