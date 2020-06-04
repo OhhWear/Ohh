@@ -113,7 +113,7 @@ export default function Header() {
   return (
     <div className={classes.root}>
     <AppBar position="static" className={classes.appbar}>
-      <Toolbar>
+      <Toolbar >
       <Link to="/" className={classes.logo}>
           <img src={Logo} className={classes.image} alt="logo" />
         </Link>

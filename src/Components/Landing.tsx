@@ -88,6 +88,7 @@ export default function Album() {
                     <Grid item xs={12}>
                         <div className={classes.h1}>
                             <h1>
+                                <p style = {{margin: "0"}}>Oh!</p>
                                 Probably the best bra for the world.
                             </h1>
                         </div>
