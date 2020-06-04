@@ -71,7 +71,7 @@ const founders = [
             <a style = {{margin: "5px"}} href = "https://in.linkedin.com/in/puneethsuraana"><LinkedInIcon /></a>,
             <a style = {{margin: "5px"}} href = "https://www.instagram.com/puneethsuraana/?hl=en"><InstagramIcon /></a>
         ],
-        description: ""
+        description: "Shakambari heads the research division of 'Oh!', ensuing our clothings are safe and sustainable. She has a PhD. Microbiology, School of Biotechnology, Madurai Kamaraj University, Madurai."
     },
     {
         key: 2,
@@ -93,18 +93,14 @@ const founders = [
             <a style = {{margin: "5px"}} href = "https://in.linkedin.com/in/puneethsuraana"><LinkedInIcon /></a>,
             <a style = {{margin: "5px"}} href = "https://www.instagram.com/puneethsuraana/?hl=en"><InstagramIcon /></a>
         ],
-        description: ""
+        description: "Dhanush is part of the research division of 'Oh!'. He is currently pursuing a B-Tech in CSE at PES University."
     },
     {
         key: 4,
         name: "Prithvi Anil",
         title: "Web developer",
         image: Prithvi,
-        links: [
-            <a style = {{margin: "5px"}} href = "https://in.linkedin.com/in/puneethsuraana"><LinkedInIcon /></a>,
-            <a style = {{margin: "5px"}} href = "https://www.instagram.com/puneethsuraana/?hl=en"><InstagramIcon /></a>
-        ],
-        description: ""
+        description: "Prithvi helped make the website for 'Oh!'. He is currently pursuing a B-Tech in CSE at PES University."
     },
 ]
 
@@ -118,14 +114,11 @@ const AboutUs: React.FC<any> = () => {
     const [isFlipped3, setIsFlipped3] = React.useState(false);
     const [isFlipped4, setIsFlipped4] = React.useState(false);
 
-    const [isHover1, setHover1] = React.useState(true);
-
     const isFlipped = [isFlipped0, isFlipped1,isFlipped2, isFlipped3, isFlipped4];
 
 
-    const handleClick = (e: MouseEvent) => {
-        e.preventDefault();
-        const name = e.currentTarget.innerHTML;
+    const handleClick = (e: MouseEvent, name: String) => {
+        // e.preventDefault();
         if(name === "Puneeth Suraana")
         {
             setIsFlipped0(!isFlipped0);
@@ -171,14 +164,14 @@ const AboutUs: React.FC<any> = () => {
                                     <Grid container justify="center" spacing={spacing}>
                                         {founders.map((value) => (
                                             <ReactCardFlip isFlipped={isFlipped[value.key]} flipDirection="horizontal">
-                                            <Grid key={value.name} item xs = {4}>
+                                            <Grid key={value.name} item xs = {4} onClick = {(e) => handleClick(e, value.name)}>
                                                 <Paper className={classes.paper}>
                                                 <div style = {{alignSelf: "center"}}>
-                                                    <img src={value.image} alt="ceo" style= {{width: "100%", height: "100%", borderRadius: "50%"}}/>
+                                                    <img src={value.image} alt="ceo" style= {{width: "100%", height: "100%", borderRadius: "50%"}} title = {value.name} />
                                                 </div>
                                                     <Typography align="center" color="textPrimary" gutterBottom>
                                                         <div style = {{fontWeight: "bold", fontFamily: 'Quicksand, sans-serif', margin: "10px 0"}}>
-                                                            <p onClick = {handleClick}>{value.name}</p>
+                                                           {value.name}
                                                         </div>
                                                         <hr/>
                                                         <div style = {{fontFamily: 'Quicksand, sans-serif', margin: "10px 0"}}>
@@ -191,11 +184,11 @@ const AboutUs: React.FC<any> = () => {
                                                     </Typography>
                                                 </Paper>
                                             </Grid>
-                                            <Grid key={value.name} item  xs = {4}>
+                                            <Grid key={value.name} item  xs = {4} onClick = {(e) => handleClick(e, value.name)}>
                                                     <Paper className={classes.paper}>
                                                     <Typography align="center" color="textPrimary" gutterBottom>
                                                         <div style = {{fontWeight: "bold", fontFamily: 'Quicksand, sans-serif', margin: "10px 0"}}>
-                                                            <p onClick = {handleClick}>{value.name}</p>
+                                                            {value.name}
                                                         </div>
                                                         <p style = {{fontFamily: 'Quicksand, sans-serif'}}>
                                                             {value.description}    
