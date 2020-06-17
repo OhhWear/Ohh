@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/Ohh/static/js/main.bc0fb715.chunk.js",
-    "main.js.map": "/Ohh/static/js/main.bc0fb715.chunk.js.map",
+    "main.js": "/Ohh/static/js/main.7237db73.chunk.js",
+    "main.js.map": "/Ohh/static/js/main.7237db73.chunk.js.map",
     "runtime-main.js": "/Ohh/static/js/runtime-main.64f1fcd9.js",
     "runtime-main.js.map": "/Ohh/static/js/runtime-main.64f1fcd9.js.map",
     "static/js/2.44c80001.chunk.js": "/Ohh/static/js/2.44c80001.chunk.js",
     "static/js/2.44c80001.chunk.js.map": "/Ohh/static/js/2.44c80001.chunk.js.map",
     "index.html": "/Ohh/index.html",
-    "precache-manifest.eb9ce1fa8904f5b85b83795d06bb35b8.js": "/Ohh/precache-manifest.eb9ce1fa8904f5b85b83795d06bb35b8.js",
+    "precache-manifest.c25d9314e69f098c1acb5de7834493a9.js": "/Ohh/precache-manifest.c25d9314e69f098c1acb5de7834493a9.js",
     "service-worker.js": "/Ohh/service-worker.js",
     "static/js/2.44c80001.chunk.js.LICENSE.txt": "/Ohh/static/js/2.44c80001.chunk.js.LICENSE.txt",
     "static/media/Radha.jpg": "/Ohh/static/media/Radha.1dbde04c.jpg",
@@ -21,6 +21,6 @@
   "entrypoints": [
     "static/js/runtime-main.64f1fcd9.js",
     "static/js/2.44c80001.chunk.js",
-    "static/js/main.bc0fb715.chunk.js"
+    "static/js/main.7237db73.chunk.js"
   ]
 }
