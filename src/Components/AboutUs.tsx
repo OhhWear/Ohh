@@ -60,17 +60,17 @@ const founders = [
             <a style={{ margin: "5px" }} href="https://in.linkedin.com/in/puneethsuraana"><LinkedInIcon /></a>,
             <a style={{ margin: "5px" }} href="https://www.instagram.com/puneethsuraana/?hl=en"><InstagramIcon /></a>
         ],
-        description: "He is a podcaster, blogger with over 300 blogs. Recognized as One of India's Youngest entrepreneurs for co-founding his first clothing venture at the age of 16 with just 20 rupees. Currently pursuing an MBA in Human capital management from PES University."
+        description: "Puneeth is a podcaster, blogger with over 300 blogs. Recognized as One of India's Youngest entrepreneurs for co-founding his first clothing venture at the age of 16 with just 20 rupees. Currently pursuing an MBA in Human capital management from PES University."
     },
     {
         key: 1,
         name: "Shakambari Ganeshan",
-        title: "Reasearch",
+        title: "Research",
         image: Shakambari,
         links: [
             <a style={{ margin: "5px" }} href="https://in.linkedin.com/in/puneethsuraana"><LinkedInIcon /></a>,
         ],
-        description: "Shakambari heads the research division of 'Oh!', ensuing our clothings are safe and sustainable. She has a PhD. Microbiology, School of Biotechnology, Madurai Kamaraj University, Madurai."
+        description: "Shakambari heads the research division of 'Ohh!', ensuing our clothings are safe and sustainable. She has a PhD. Microbiology, School of Biotechnology, Madurai Kamaraj University, Madurai."
     },
     {
         key: 2,
@@ -79,7 +79,7 @@ const founders = [
         image: Radha,
         links: [
         ],
-        description: "Radha main designer of 'Ohh!'s bras. She is a self made entrepreneur who is expirienced in design, yoga and buisness."
+        description: "Radha is the main designer of 'Ohh!'s bras. She is a self made entrepreneur who is experienced in design, yoga and buisness."
     },
     {
         key: 3,
@@ -143,7 +143,7 @@ const AboutUs: React.FC<any> = () => {
                             Our Mission
                         </Typography>
                         <Typography align="center" paragraph style={{ fontSize: "25px", fontFamily: 'Quicksand, sans-serif' }}>
-                            Oh is passionately committed to saving the lives of women battling with cancer by providing them with top quality, aesthetic and sustainable clothing that allows them to be comfortable and confident. Our five-year goal is to make a difference in the lives of 1 million women and make a significant and lasting impact on the sustainable clothing industry.
+                            'Ohh!' is passionately committed to saving the lives of women battling with cancer by providing them with top quality, aesthetic and sustainable clothing that allows them to be comfortable and confident. Our five-year goal is to make a difference in the lives of 1 million women and make a significant and lasting impact on the sustainable clothing industry.
                         </Typography>
                         <hr />
                         <div style={{ marginTop: "20px" }}>

@@ -31,7 +31,7 @@ const cards = [
         key: 2,
         image: "https://thumbs.dreamstime.com/b/women-holding-bra-against-pink-background-concept-breast-cancer-awareness-international-no-day-celebration-159354020.jpg",
         heading: "Sustainable Style, Backed by Science",
-        description: "Our offerings are affordable bras that accomodate prosthesus. They are wire-free, plastic-free and are made with high-quality organic fabrics.",
+        description: "Our offerings are affordable bras that accomodate prosthesis. They are wire-free, plastic-free and are made with high-quality organic fabrics.",
         links: ""
     },
     {
@@ -60,7 +60,8 @@ const useStyles = makeStyles((theme) => ({
     h1: {
         textAlign: 'center',
         fontFamily: 'Quicksand, sans-serif',
-        fontSize: "27.5px"
+        margin: "0 10px",
+        // fontSize: "27.5px"
     },
     card: {
         height: '100%',
@@ -92,10 +93,12 @@ export default function Album() {
                 <Grid container spacing={0}>
                     <Grid item xs={12}>
                         <div className={classes.h1}>
-                            <h1>
-                                <p style={{ margin: "0", fontSize: "80px" }}>Ohh!</p>
-                                Probably the best bra for the world.
+                            <h1 style = {{fontSize: "80px", margin: "20px"}}>
+                                Ohh!
                             </h1>
+                            <p style = {{fontSize: "45px", fontWeight: "bold"}}>
+                                Probably the best bra for the world.
+                            </p>
                         </div>
                     </Grid>
                     <Grid item xs={12} className={classes.card}>
