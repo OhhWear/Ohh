@@ -35,14 +35,14 @@ export default function Survey() {
                     style={{ minHeight: '40vh'}}
                 >
                     <Grid item xs={12}>
-                        <Card style = {{margin: "20px 0", padding: "20px 0"}}>
+                        <Card style = {{margin: "20px 20px", padding: "20px 0"}}>
                             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom style={{ fontFamily: 'Quicksand, sans-serif', fontWeight: "bold" }}>
                                 Take Our Survey!
                             </Typography>
                             <Typography component="p" align="center" color="textPrimary" gutterBottom style={{ fontFamily: 'Quicksand, sans-serif', fontSize: "25px", margin: "20px 10px", textAlign: "left"}}>
                                 We are taking a closer look at core issues facing the beautiful woman who are fighting breast cancer by bringing light to unadressed problems.
                             </Typography> 
-                            <img alt = "closerLook" style = {{width: "300px", display:"flex", justifyContent: "center"}} src="https://files.slack.com/files-pri/TUY2N6NP5-F015V5M17U1/image_from_ios.jpg"></img>
+                            <img alt = "closerLook" style = {{width: "300px", display:"flex", justifyContent: "center"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsgibr_5TfJRf87d_t656HdDd-W0dMNt-MfdxDyowHO-lQSACDA&s"></img>
                         </Card>
                     </Grid>
                 </Grid>
