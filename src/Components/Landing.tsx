@@ -101,7 +101,7 @@ export default function Album() {
                     <Grid item xs={12} className={classes.card}>
                         <Container>
                             <div className={classes.div}>
-                                Ohh! is passonately commited to saving the lives of women battling with breast cancer by providing them with top-quality, aesthetic and sustainable clothing that allows them to be comfortable and confident.
+                                Ohh! is passionately commited to saving the lives of women battling with breast cancer by providing them with top-quality, aesthetic and sustainable clothing that allows them to be comfortable and confident.
                             </div>
                         </Container>
                     </Grid>
