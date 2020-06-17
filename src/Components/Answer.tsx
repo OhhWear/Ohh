@@ -4,8 +4,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Background from '../background.png'
-import { Grid, Card } from '@material-ui/core';
+import { Grid, Card, Button } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent'
+import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -37,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     },
     cardContent: {
         flexGrow: 1,
+        fontFamily: 'Quicksand, sans-serif'
     },
 }));
 
@@ -63,8 +65,9 @@ const cards = [
     },
 ]
 
-export default function FAQ() {
+export default function Answer() {
     const classes = useStyles();
+    const { id } = useParams();
     return (
         <React.Fragment>
             <CssBaseline />
@@ -78,22 +81,23 @@ export default function FAQ() {
                 </div>
                 <Container className={classes.cardGrid} maxWidth="lg">
                 <Grid container spacing={6}>
-                    {cards.map((card) => (
-                    <Grid item key={card.key} xs={12} sm={6} md={12}>
+                    <Grid item key={cards[id].key} xs={12} sm={6} md={12} alignItems = "center">
                         <Card>
                         <CardContent className={classes.cardContent}>
-                            <Typography gutterBottom style = {{color: "#fec700", fontFamily: 'Quicksand, sans-serif', fontWeight: "bold", fontSize: "30px", margin: "0"}}>
-                                <Link to = {`faq/${card.key}`} style = {{color: "inherit", textDecoration: "none"}}>
-                                    <span style = {{fontSize: "40px"}}>Q.</span> {card.question}
-                                </Link>
+                            <Typography gutterBottom style = {{color: "#fec700", fontFamily: 'Quicksand, sans-serif', fontWeight: "bold", fontSize: "30px"}}>
+                                <span style = {{fontSize: "40px"}}>Q.</span> {cards[id].question}
                             </Typography>
-                            {/* <Typography style = {{fontFamily: 'Quicksand, sans-serif', fontSize: "22px"}}>
-                                <span style = {{fontSize: "30px", color: "grey"}}>A.</span> {card.answer}
-                            </Typography> */}
+                            <Typography style = {{fontFamily: 'Quicksand, sans-serif', fontSize: "22.5px"}}>
+                                <span style = {{fontSize: "30px", color: "grey"}}>A.</span> {cards[id].answer}
+                            </Typography>
                         </CardContent>
+                        <Button variant = "contained" color = "secondary" style = {{marginBottom: "10px", marginLeft: "10px",textTransform: "none", fontFamily: 'Quicksand, sans-serif', fontSize: "17.5px"}}>
+                            <Link to = "/faq" style = {{color: "white", textDecoration: "none"}}>
+                                Go Back to FAQs
+                            </Link>
+                        </Button>
                         </Card>
                     </Grid>
-                    ))}
                 </Grid>
                 </Container>
             </main>

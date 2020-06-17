@@ -12,13 +12,14 @@ import { Link } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/MenuRounded';
 import HomeIcon from '@material-ui/icons/HomeRounded';
 import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
-import ContactSupportRoundedIcon from '@material-ui/icons/ContactSupportRounded';
+// import ContactSupportRoundedIcon from '@material-ui/icons/ContactSupportRounded';
+import QuestionAnswerRoundedIcon from '@material-ui/icons/QuestionAnswerRounded';
 import { green } from '@material-ui/core/colors';
 import Logo from '../ohlogov1.png'
 
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   appbar: {
     backgroundColor: "#fec700",
@@ -53,13 +54,17 @@ const links = [
     icon: <HomeIcon color="secondary" />
   },
   {
+    link: '/survey',
+    icon: <QuestionAnswerRoundedIcon color="primary" />
+  },
+  {
     link: '/aboutus',
     icon: <PeopleAltRoundedIcon style={{ color: green[500] }} />
   },
-  {
-    link: '/faq',
-    icon: <ContactSupportRoundedIcon/>
-  },
+  // {
+  //   link: '/faq',
+  //   icon: <ContactSupportRoundedIcon/>
+  // },
 ]
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
@@ -98,7 +103,7 @@ export default function Header() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'About Us', 'FAQ'].map((text, index) => (
+        {['Home', 'Survey', 'About Us'].map((text, index) => (
           <ListItem button key={text}>
             <Link style={LinkStyles} to={(links[index].link)}>
               <ListItemIcon>{links[index].icon}</ListItemIcon>
