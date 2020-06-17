@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/Ohh/static/js/main.bc0fb715.chunk.js",
+    "main.js.map": "/Ohh/static/js/main.bc0fb715.chunk.js.map",
+    "runtime-main.js": "/Ohh/static/js/runtime-main.64f1fcd9.js",
+    "runtime-main.js.map": "/Ohh/static/js/runtime-main.64f1fcd9.js.map",
+    "static/js/2.44c80001.chunk.js": "/Ohh/static/js/2.44c80001.chunk.js",
+    "static/js/2.44c80001.chunk.js.map": "/Ohh/static/js/2.44c80001.chunk.js.map",
+    "index.html": "/Ohh/index.html",
+    "precache-manifest.eb9ce1fa8904f5b85b83795d06bb35b8.js": "/Ohh/precache-manifest.eb9ce1fa8904f5b85b83795d06bb35b8.js",
+    "service-worker.js": "/Ohh/service-worker.js",
+    "static/js/2.44c80001.chunk.js.LICENSE.txt": "/Ohh/static/js/2.44c80001.chunk.js.LICENSE.txt",
+    "static/media/Radha.jpg": "/Ohh/static/media/Radha.1dbde04c.jpg",
+    "static/media/background.png": "/Ohh/static/media/background.3c15e065.png",
+    "static/media/dhanush.jpg": "/Ohh/static/media/dhanush.67c49969.jpg",
+    "static/media/ohlogov1.png": "/Ohh/static/media/ohlogov1.fad0fb4d.png",
+    "static/media/prithvi.jpg": "/Ohh/static/media/prithvi.f9be9a62.jpg",
+    "static/media/puneeth3.jpg": "/Ohh/static/media/puneeth3.5fd4cb79.jpg",
+    "static/media/shakambari.jpg": "/Ohh/static/media/shakambari.f83269a5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64f1fcd9.js",
+    "static/js/2.44c80001.chunk.js",
+    "static/js/main.bc0fb715.chunk.js"
+  ]
+}
