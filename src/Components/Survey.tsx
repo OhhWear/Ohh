@@ -47,7 +47,7 @@ export default function Survey() {
                     </Grid>
                 </Grid>
                 <div style ={{margin: "30px 0"}} >
-                    <iframe scrolling="no" title="survey" src="https://docs.google.com/forms/d/e/1FAIpQLSdFyY6p-3t2Lqe1xBYpl-lt9NkbMGff5A0NqlHSL42mMMs6RA/viewform?embedded=true" width="100%" height="1963">Loading…</iframe>
+                    <iframe title="survey" src="https://docs.google.com/forms/d/e/1FAIpQLSdFyY6p-3t2Lqe1xBYpl-lt9NkbMGff5A0NqlHSL42mMMs6RA/viewform?embedded=true"  width="100%" height="2000vh">Loading…</iframe>
                 </div>
             </main>
         </React.Fragment>
