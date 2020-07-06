@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom'
 import MenuIcon from '@material-ui/icons/MenuRounded';
 import HomeIcon from '@material-ui/icons/HomeRounded';
 import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
+import TimelineRoundedIcon from '@material-ui/icons/TimelineRounded';
 // import ContactSupportRoundedIcon from '@material-ui/icons/ContactSupportRounded';
 import QuestionAnswerRoundedIcon from '@material-ui/icons/QuestionAnswerRounded';
 import { green } from '@material-ui/core/colors';
@@ -61,6 +62,10 @@ const links = [
     link: '/aboutus',
     icon: <PeopleAltRoundedIcon style={{ color: green[500] }} />
   },
+  {
+    link: '/story',
+    icon: <TimelineRoundedIcon />
+  }
   // {
   //   link: '/faq',
   //   icon: <ContactSupportRoundedIcon/>
@@ -103,7 +108,7 @@ export default function Header() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {['Home', 'Survey', 'About Us'].map((text, index) => (
+        {['Home', 'Survey', 'About Us', 'Our Story'].map((text, index) => (
           <ListItem button key={text}>
             <Link style={LinkStyles} to={(links[index].link)}>
               <ListItemIcon>{links[index].icon}</ListItemIcon>
@@ -117,32 +122,32 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-    <AppBar position="static" className={classes.appbar}>
-      <Toolbar >
-      <Link to="/" className={classes.logo}>
-          <img src={Logo} className={classes.image} alt="logo" />
-        </Link>
-        <div>
-          {(['right'] as Anchor[]).map((anchor) => (
-            <React.Fragment key={anchor}>
-              <div>
-                <Button onClick={toggleDrawer(anchor, true)}>
-                  <MenuIcon />
-                </Button>
-              </div>
-              <SwipeableDrawer
-                anchor={anchor}
-                open={state[anchor]}
-                onClose={toggleDrawer(anchor, false)}
-                onOpen={toggleDrawer(anchor, true)}
-              >
-                {list(anchor)}
-              </SwipeableDrawer>
-            </React.Fragment>
-          ))}
-        </div>
-      </Toolbar>
-    </AppBar>
+      <AppBar position="static" className={classes.appbar}>
+        <Toolbar >
+          <Link to="/" className={classes.logo}>
+            <img src={Logo} className={classes.image} alt="logo" />
+          </Link>
+          <div>
+            {(['right'] as Anchor[]).map((anchor) => (
+              <React.Fragment key={anchor}>
+                <div>
+                  <Button onClick={toggleDrawer(anchor, true)}>
+                    <MenuIcon />
+                  </Button>
+                </div>
+                <SwipeableDrawer
+                  anchor={anchor}
+                  open={state[anchor]}
+                  onClose={toggleDrawer(anchor, false)}
+                  onOpen={toggleDrawer(anchor, true)}
+                >
+                  {list(anchor)}
+                </SwipeableDrawer>
+              </React.Fragment>
+            ))}
+          </div>
+        </Toolbar>
+      </AppBar>
     </div>
   );
 }

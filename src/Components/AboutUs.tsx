@@ -9,6 +9,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import Background from '../background.png'
 import ReactCardFlip from 'react-card-flip';
+import Awards from './Awards';
 
 import Radha from './Assets/Radha.jpg';
 import Puneeth from './Assets/puneeth3.jpg'
