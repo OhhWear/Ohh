@@ -13,6 +13,8 @@ import GroupBack from './Assets/group_back.jpg';
 import IMMC from './Assets/immc.png';
 import IMMU from './Assets/immu.png';
 import NITD from './Assets/nitd.png';
+import Christ from './Assets/christ.png';
+import Symbiosis from './Assets/symbiosis.png';
 
 const cards = [
     {
@@ -55,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     },
     div: {
         textAlign: 'left',
-        fontSize: "22.5px",
+        fontSize: "21.5px",
         fontFamily: 'Quicksand, sans-serif',
         margin: "10px 0"
     },
@@ -65,7 +67,6 @@ const useStyles = makeStyles((theme) => ({
         margin: "0 10px",
     },
     card: {
-        // backgroundColor: "inherit",
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
@@ -74,11 +75,11 @@ const useStyles = makeStyles((theme) => ({
         paddingTop: '56.25%', // 16:9
     },
     cardMediaSqaure: {
-        paddingTop: '100%', 
+        paddingTop: '100%',
     },
     cardGrid: {
         paddingTop: theme.spacing(4),
-        paddingBottom: theme.spacing(4),
+        paddingBottom: theme.spacing(8),
     },
     cardContent: {
         flexGrow: 1
@@ -89,8 +90,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function Album() {
+export default function Story() {
     const classes = useStyles();
+    const images = [IMMC, IMMU, NITD, Christ];
     return (
         <>
             <CssBaseline />
@@ -155,7 +157,17 @@ export default function Album() {
                 </Grid>
                 <Container className={classes.cardGrid} maxWidth="lg">
                     <Grid container spacing={3}>
-                        <Grid item xs={6} sm={3} md={3}>
+                        {images.map((img) => (
+                            <Grid item xs={6} sm={3} md={3}>
+                                <Card className={classes.card}>
+                                    <CardMedia
+                                        image={img}
+                                        className={classes.cardMediaSqaure}
+                                    />
+                                </Card>
+                            </Grid>
+                        ))}
+                        {/* <Grid item xs={6} sm={3} md={3}>
                             <Card className={classes.card}>
                                 <CardMedia
                                     image={IMMC}
@@ -183,13 +195,14 @@ export default function Album() {
                             <Card className={classes.card}>
                                 <CardMedia
                                     className={classes.cardMediaSqaure}
-                                    image={IMMC}
+                                    image={Christ}
                                 />
                             </Card>
-                        </Grid>
+                        </Grid> */ }
                     </Grid>
                 </Container>
             </div>
         </>
     );
+
 }
