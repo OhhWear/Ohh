@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.js": "/Ohh/static/js/main.eb411f34.chunk.js",
-    "main.js.map": "/Ohh/static/js/main.eb411f34.chunk.js.map",
+    "main.js": "/Ohh/static/js/main.384ff464.chunk.js",
+    "main.js.map": "/Ohh/static/js/main.384ff464.chunk.js.map",
     "runtime-main.js": "/Ohh/static/js/runtime-main.64f1fcd9.js",
     "runtime-main.js.map": "/Ohh/static/js/runtime-main.64f1fcd9.js.map",
-    "static/js/2.44c80001.chunk.js": "/Ohh/static/js/2.44c80001.chunk.js",
-    "static/js/2.44c80001.chunk.js.map": "/Ohh/static/js/2.44c80001.chunk.js.map",
+    "static/js/2.e0f87acd.chunk.js": "/Ohh/static/js/2.e0f87acd.chunk.js",
+    "static/js/2.e0f87acd.chunk.js.map": "/Ohh/static/js/2.e0f87acd.chunk.js.map",
     "index.html": "/Ohh/index.html",
-    "precache-manifest.c8637715f0ce614ac8046195477a2f40.js": "/Ohh/precache-manifest.c8637715f0ce614ac8046195477a2f40.js",
+    "precache-manifest.aaf27dbdccd95271cdc50e9518848c00.js": "/Ohh/precache-manifest.aaf27dbdccd95271cdc50e9518848c00.js",
     "service-worker.js": "/Ohh/service-worker.js",
-    "static/js/2.44c80001.chunk.js.LICENSE.txt": "/Ohh/static/js/2.44c80001.chunk.js.LICENSE.txt",
+    "static/js/2.e0f87acd.chunk.js.LICENSE.txt": "/Ohh/static/js/2.e0f87acd.chunk.js.LICENSE.txt",
     "static/media/Radha.jpg": "/Ohh/static/media/Radha.1dbde04c.jpg",
     "static/media/background.png": "/Ohh/static/media/background.3c15e065.png",
+    "static/media/christ.png": "/Ohh/static/media/christ.422ce30b.png",
     "static/media/dhanush.jpg": "/Ohh/static/media/dhanush.67c49969.jpg",
+    "static/media/group_back.jpg": "/Ohh/static/media/group_back.b8f937d5.jpg",
+    "static/media/group_selfie.jpg": "/Ohh/static/media/group_selfie.f0b11344.jpg",
+    "static/media/immc.png": "/Ohh/static/media/immc.e6f81b16.png",
+    "static/media/immu.png": "/Ohh/static/media/immu.baf97b10.png",
+    "static/media/nitd.png": "/Ohh/static/media/nitd.ff8d3af2.png",
     "static/media/ohlogov1.png": "/Ohh/static/media/ohlogov1.fad0fb4d.png",
+    "static/media/present_1.jpg": "/Ohh/static/media/present_1.1f812a70.jpg",
+    "static/media/present_2.jpg": "/Ohh/static/media/present_2.ab949b3d.jpg",
     "static/media/prithvi.jpg": "/Ohh/static/media/prithvi.f9be9a62.jpg",
     "static/media/puneeth3.jpg": "/Ohh/static/media/puneeth3.5fd4cb79.jpg",
     "static/media/shakambari.jpg": "/Ohh/static/media/shakambari.f83269a5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.64f1fcd9.js",
-    "static/js/2.44c80001.chunk.js",
-    "static/js/main.eb411f34.chunk.js"
+    "static/js/2.e0f87acd.chunk.js",
+    "static/js/main.384ff464.chunk.js"
   ]
 }
