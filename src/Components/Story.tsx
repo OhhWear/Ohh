@@ -20,29 +20,26 @@ const cards = [
     {
         key: 0,
         image: Present1,
-        heading: "Lets Fight It Together",
-        description: "Breast cancer patients suffer from loss of identity, insecurity and depression. We believe you shouldn't be dealing with breast cancer alone.",
-        links: ""
+        heading: "",
+        description: "",
     },
     {
         key: 1,
         image: Present2,
-        heading: "Be Brave",
-        description: "The stigma and discrimination on topics like breast cancer is all too well known in India. We're going against the grain, starting discussions about sensitive topics and helping women deal with these issues.",
-        links: ""
+        heading: "",
+        description: "",
     },
     {
         key: 2,
         image: GroupSelfie,
-        heading: "Sustainable Style, Backed by Science",
-        description: "Our offerings are affordable bras that accomodate prosthesis. They are wire-free, plastic-free and are made with high-quality organic fabrics.",
-        links: ""
+        heading: "",
+        description: "",
     },
     {
         key: 3,
         image: GroupBack,
-        heading: "Your Clothes Will Kill You Slowly But Surely!",
-        description: "We have the illusion that clothes made from synthetic fibers are safe, but the materials are in fact full of invisible chemicals the clothing industry prefers we don't think about.",
+        heading: "",
+        description: "",
     },
 ];
 
@@ -54,12 +51,13 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: "contain",
         backgroundPosition: "center",
         marginTop: "20px",
+        width: "100%"
     },
     div: {
         textAlign: 'left',
-        fontSize: "21.5px",
+        fontSize: "20.5px",
         fontFamily: 'Quicksand, sans-serif',
-        margin: "10px 0"
+        margin: "10px 0",
     },
     h1: {
         textAlign: 'center',
@@ -68,8 +66,10 @@ const useStyles = makeStyles((theme) => ({
     },
     card: {
         height: '100%',
+        backgroundColor: "transparent",
         display: 'flex',
         flexDirection: 'column',
+        margin: "0 5px"
     },
     cardMedia: {
         paddingTop: '56.25%', // 16:9
@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
         paddingBottom: theme.spacing(8),
     },
     cardContent: {
-        flexGrow: 1
+        flexGrow: 1,
     },
     margin: {
         margin: theme.spacing(1),
@@ -100,7 +100,7 @@ export default function Story() {
                 <Grid container spacing={0}>
                     <Grid item xs={12}>
                         <div className={classes.h1}>
-                            <h1 style={{ fontSize: "80px", margin: "10px" }}>
+                            <h1 style={{ fontSize: "65px", margin: "10px 0" }}>
                                 Our Story
                             </h1>
                         </div>
@@ -109,7 +109,9 @@ export default function Story() {
                         <Container>
                             <div className={classes.div}>
                                 It was the 1-hour lunch break on a normal college day that we were Sitting around our usual marble-topped table in the college canteen.
-                                The usuals - The studious Vidya Karturi, the silent-killer Himani, the jovial Navya and the notorious Puneeth Suraana.
+                            </div>
+                            <div className={classes.div}>
+                                The usuals - The studious <strong> Vidya Karturi </strong> , the silent-killer Himani, the jovial <strong> Navya </strong> and the notorious <strong>Puneeth Suraana.</strong> 
                                 We were always bouncing fancy, hilarious and bordering-dreamy ideas.
                             </div>
                             <div className={classes.div}>
@@ -118,8 +120,12 @@ export default function Story() {
                                 Somewhere, the conversation took a turn towards bras and bra-problems! We discussed, dissected and deep-dived into topics from Kamasutra to Kindness*, from success secrets to spss programming, from self-protection to sponsorships!
                                 The bra-woes took over the conversation immediately and a laundry list of problems was soon turned to hilarious jokes!
                                 The lunch ended but the conversation lingered in our minds.
+                            </div>
+                            <div className={classes.div}>
                                 A few days later, Puneet received a mail from IIM-Calcutta about a business-plan pitch fest. The enthusiastic fester and the last bencher that he was, he jumped onto the idea and narrowed down on two ideas. - A condom company or a bra company.
                                 It was up to the 3 girls over another college lunch to pick which one to go ahead with. But, they said no! Both were jokes and not business ideas!
+                            </div>
+                            <div className={classes.div}>
                                 Unwilling to let go so easily, Puneeth went ahead and began creating a business plan.
                                 It soon dawned that one would need a pharma company to begin selling condom and the plan died in the tracks. But, the random research of looking at bra problems was shockingly revealing!
                             </div>
