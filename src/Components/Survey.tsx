@@ -3,6 +3,8 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 import Background from '../background.png';
 import { Card, Grid, Typography, Button } from '@material-ui/core';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import PersonIcon from '@material-ui/icons/Person';
 
 const useStyles = makeStyles((theme) => ({
     container: {
@@ -28,8 +30,8 @@ export default function Survey() {
         else if (typeOfSurvey === 2 ) return <iframe title="survey" src="https://docs.google.com/forms/d/e/1FAIpQLSdFyY6p-3t2Lqe1xBYpl-lt9NkbMGff5A0NqlHSL42mMMs6RA/viewform?embedded=true"  width="100%" height="2000vh">Loading…</iframe>;
         else return (
             <div style = {{display: "flex", justifyContent: "space-around"}}>
-                <Button variant="contained" color="primary" style = {{textTransform: "none"}} onClick = {() => setSurvey(1)}>I am a patient / caregiver</Button>
-                <Button variant="contained" color="secondary" style = {{textTransform: "none"}} onClick = {() => setSurvey(2)}>I am a medical professional</Button>
+                <Button variant="contained" color="primary" style = {{textTransform: "none", fontSize: "20px", margin: "0 10px"}} onClick = {() => setSurvey(1)}>I am a patient / caregiver {" "} <PersonIcon /></Button>
+                <Button variant="contained" color="secondary" style = {{textTransform: "none", fontSize: "20px", margin: "0 10px"}} onClick = {() => setSurvey(2)}>I am a medical professional {" "} <LocalHospitalIcon /></Button>
             </div>
         );        
     }
@@ -52,7 +54,7 @@ export default function Survey() {
                                 Take Our Survey!
                             </Typography>
                             <Typography component="p" align="center" color="textPrimary" gutterBottom style={{ fontFamily: 'Quicksand, sans-serif', fontSize: "25px", margin: "20px 10px", textAlign: "left"}}>
-                                We are taking a closer look at core issues facing the beautiful women who are fighting breast cancer by bringing light to unaddressed problems.
+                                We are taking a closer look at core issues facing the women who are fighting breast cancer by bringing light to unaddressed problems.
                             </Typography> 
                             <img alt = "closerLook" style = {{width: "300px", margin: "0 auto", display:"flex", justifyContent: "center"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQsgibr_5TfJRf87d_t656HdDd-W0dMNt-MfdxDyowHO-lQSACDA&s"></img>
                         </Card>
